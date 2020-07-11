@@ -33,7 +33,25 @@
         </div>
       </nav>
       <br/>
+      <!-- <form class="container" method="POST">
+        {% csrf_token%}
+        <div class="form-group" >
+          <label for="noteTitle">Title</label>
+          <input type="search" class="form-control" id="noteText" placeholder="Add Title" name="title">
+          <label for="noteText">Add your Notes</label>
+          <textarea class="form-control" id="noteText" rows="3"></textarea>
+          <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit" style="float:right">Add to Notes</button>
+        </div>
+
+      
+      </form> -->
+      <!-- <form class="form-inline my-2 my-lg-0" method="POST">
+        {% csrf_token %}
+      <input class="form-control mr-sm-2" type="search" placeholder="Add Note" aria-label="note" name = "title">
+      <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Add to Notes</button>
+    </form> -->
     <div class="container">
+      <br/>
         {% block content %}
         {% endblock %}
     </div>
