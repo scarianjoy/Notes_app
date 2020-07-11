@@ -14,10 +14,23 @@
 {% endif %}
 
 {% if all_items %}
-    {% for things in all_items %}
-        {{ things.item }} | {{ things.completed }}
-    {% endfor %}
-
+    <table class="table table-bordered">   
+        {% for things in all_items %}
+            {% if things.completed %}
+                <tr class = 'table-seccondary'>
+                <td><a href = "{% url 'edit' things.id %}">{{ things.item }}</a></td>
+                <!-- <td><center><a href="{% url 'uncross' things.id %}">Uncross</a></center></td> -->
+                <td><center><a href="{% url 'delete' things.id %}">Delete</a></center></td>
+                </tr>
+            {% else %}
+                <tr>
+                <td><a href = "{% url 'edit' things.id %}">{{ things.item }}</a></td>
+                <!-- <td><center><a href="{% url 'cross_off' things.id %}">Cross Off</a></center></td> -->
+                <td><center><a href="{% url 'delete' things.id %}">Delete</a></center></td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </table>
 {% endif %}
 
 {% endblock %}
