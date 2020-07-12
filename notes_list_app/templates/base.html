@@ -25,11 +25,11 @@
           <ul class="navbar-nav mr-auto">
             
           </ul>
-          <form class="form-inline my-2 my-lg-0" method="POST">
+          <!-- <form class="form-inline my-2 my-lg-0" method="POST">
               {% csrf_token %}
             <input class="form-control mr-sm-2" type="search" placeholder="Add Note" aria-label="note" name = "item">
             <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Add to Notes</button>
-          </form>
+          </form> -->
         </div>
       </nav>
       <br/>
@@ -45,13 +45,8 @@
 
       
       </form> -->
-      <!-- <form class="form-inline my-2 my-lg-0" method="POST">
-        {% csrf_token %}
-      <input class="form-control mr-sm-2" type="search" placeholder="Add Note" aria-label="note" name = "title">
-      <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Add to Notes</button>
-    </form> -->
+      
     <div class="container">
-      <br/>
         {% block content %}
         {% endblock %}
     </div>
