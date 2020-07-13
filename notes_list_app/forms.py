@@ -7,3 +7,5 @@ class Listform(forms.ModelForm):
         model = List
         fields = ['item']
  
+
+ 

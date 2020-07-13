@@ -48,6 +48,10 @@ def edit(request, list_id):
         return render(request, 'edit.html', {'item': item})
 
 
+def welcome(request):
+    return render(request, 'welcome.html')
+
+
 def cross_off(request, list_id):
     item  = List.objects.get(pk=list_id)
     item.completed = True
