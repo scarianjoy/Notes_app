@@ -6,5 +6,5 @@ urlpatterns = [
      path('cross_off/<list_id>', views.cross_off, name = 'cross_off'),
      path('uncross/<list_id>', views.uncross, name = 'uncross'),
      path('edit/<list_id>', views.edit, name='edit'),
-     path('welcome', views.welcome, name='welcome')
+     path('', views.welcome, name='welcome')
 ]
