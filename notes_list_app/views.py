@@ -10,17 +10,14 @@ def home(request):
         form = Listform(request.POST or None)
 
         if form.is_valid():
-            print ('into if')
             form.save()
             all_items = List.objects.all 
             messages.success(request, ('Notes have been added to the list'))
             return render(request, 'home.html', {'all_items': all_items})
         else:
-            print ('into else')
             all_items = List.objects.all 
             return render(request, 'home.html', {'all_items': all_items})
     else:
-        print ('into external else')
         all_items = List.objects.all 
         return render(request, 'home.html', {'all_items': all_items})
 
