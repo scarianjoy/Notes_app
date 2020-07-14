@@ -25,7 +25,7 @@ SECRET_KEY = 'oj96@bdfr2_o84wug)h!xtxoi+h*bi%h$f^*+7nukv6u4*2s-&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['salty-retreat-96634.herokuapp.com']
 
 
 # Application definition
